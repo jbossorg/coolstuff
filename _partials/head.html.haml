@@ -8,6 +8,7 @@
 
 - if site.profile.eql?("staging") or site.profile.eql?("production")
   %link(href="#{pageStyle ? site[pageStyle].bootstrap_css_url : site.bootstrap_css_url}#{site.minified}.css" rel="stylesheet" media="screen")
+  %link(href="http://static.jboss.org/css/rhbar.css" rel="stylesheet" media="screen")
 - else
   %link(rel="stylesheet/less" type="text/css" href="#{pageStyle ? site[pageStyle].bootstrap_css_url : site.bootstrap_css_url}#{site.minified}.less")
 
